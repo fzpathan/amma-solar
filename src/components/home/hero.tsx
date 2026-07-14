@@ -26,7 +26,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/75 via-navy/70 to-navy-deep/90" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(253,184,19,0.18),_transparent_50%)]" />
 
-      <div className="container-narrow relative flex min-h-[100svh] flex-col justify-end pb-16 pt-28 sm:justify-center sm:pb-24 sm:pt-32">
+      <div className="container-narrow relative flex min-h-[100svh] flex-col justify-end pb-16 pt-32 sm:justify-center sm:pb-24 sm:pt-40 lg:pt-44">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}

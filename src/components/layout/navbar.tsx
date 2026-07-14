@@ -49,7 +49,7 @@ export function Navbar() {
           : "bg-transparent"
       )}
     >
-      <div className="container-narrow flex h-20 items-center justify-between gap-3 px-4 sm:px-6 md:h-24 lg:px-8">
+      <div className="container-narrow flex h-24 items-center justify-between gap-3 px-4 sm:px-6 md:h-28 lg:h-32 lg:px-8">
         <Link href="/" aria-label={siteConfig.name}>
           <Logo className={cn(!solid && isHome && "[&_span]:text-white [&_span.text-muted]:text-white/70 [&_span.text-green]:text-yellow")} />
         </Link>

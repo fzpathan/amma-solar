@@ -21,7 +21,7 @@ export default async function PrivacyPage({
   const t = await getTranslations("privacy");
 
   return (
-    <section className="section-pad pt-28 md:pt-32">
+    <section className="section-pad pt-32 md:pt-40">
       <div className="container-narrow max-w-3xl">
         <h1 className="text-4xl font-bold text-navy">{t("title")}</h1>
         <p className="mt-2 text-sm text-muted">{t("updated")}</p>

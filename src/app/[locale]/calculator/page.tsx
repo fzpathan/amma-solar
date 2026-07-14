@@ -25,7 +25,7 @@ export default async function CalculatorPage({
   const t = await getTranslations("calculatorPage");
 
   return (
-    <section className="section-pad pt-28 md:pt-32">
+    <section className="section-pad pt-32 md:pt-40">
       <div className="container-narrow">
         <div className="mx-auto mb-10 max-w-2xl text-center">
           <h1 className="text-4xl font-bold text-navy sm:text-5xl">

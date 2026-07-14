@@ -39,7 +39,7 @@ export default async function SubsidyPage({
 
   return (
     <>
-      <section className="bg-navy pb-16 pt-28 text-white md:pt-32">
+      <section className="bg-navy pb-16 pt-32 text-white md:pt-40">
         <div className="container-narrow px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-yellow">
             {t("eyebrow")}

@@ -28,7 +28,7 @@ export default async function ContactPage({
   const tc = await getTranslations("common");
 
   return (
-    <section className="section-pad pt-28 md:pt-36">
+    <section className="section-pad pt-32 md:pt-40">
       <div className="container-narrow">
         <div className="mb-10 max-w-2xl">
           <h1 className="text-4xl font-bold text-navy sm:text-5xl">

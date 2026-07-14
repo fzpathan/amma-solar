@@ -15,7 +15,7 @@ export function Logo({ className, variant = "full" }: LogoProps) {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden
-        className="h-12 w-12 shrink-0 sm:h-14 sm:w-14"
+        className="h-11 w-11 shrink-0 sm:h-12 sm:w-12 md:h-14 md:w-14"
       >
         <rect width="40" height="40" rx="10" fill="#0B3C6D" />
         <path
@@ -33,10 +33,10 @@ export function Logo({ className, variant = "full" }: LogoProps) {
       </svg>
       {variant === "full" && (
         <div className="leading-none">
-          <span className="block text-2xl font-extrabold tracking-tight text-navy sm:text-3xl md:text-4xl">
+          <span className="block text-2xl font-extrabold tracking-tight text-navy sm:text-3xl lg:text-[2.35rem]">
             AMMA <span className="text-green">SOLAR</span>
           </span>
-          <span className="mt-1 block text-xs font-semibold uppercase tracking-[0.16em] text-muted sm:text-sm">
+          <span className="mt-1.5 block text-xs font-semibold uppercase tracking-[0.16em] text-muted sm:text-sm">
             Nashik
           </span>
         </div>
