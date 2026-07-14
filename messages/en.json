@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "siteName": "AMMA SOLAR",
+    "defaultTitle": "AMMA SOLAR | Solar Installation & PM Surya Ghar Subsidy Nashik",
+    "defaultDescription": "Trusted rooftop solar partner in Nashik. Government subsidy up to ₹78,000, bank loan support, net metering, and expert installation. Free consultation.",
+    "homeTitle": "Home | AMMA SOLAR Nashik",
+    "subsidyTitle": "PM Surya Ghar Subsidy | AMMA SOLAR",
+    "subsidyDescription": "Check eligibility, subsidy amounts, documents, and process for PM Surya Ghar Muft Bijli Yojana in Maharashtra with AMMA SOLAR Nashik.",
+    "calculatorTitle": "Solar EMI & Savings Calculator | AMMA SOLAR",
+    "calculatorDescription": "Estimate system size, subsidy, EMI at 6%, and monthly savings for your home electricity bill.",
+    "galleryTitle": "Installation Gallery | AMMA SOLAR",
+    "galleryDescription": "Residential solar installations and project photos by AMMA SOLAR Nashik.",
+    "contactTitle": "Contact | AMMA SOLAR Nashik",
+    "contactDescription": "Book a free site survey with Sabir Khan. Call or WhatsApp AMMA SOLAR in Nashik.",
+    "privacyTitle": "Privacy Policy | AMMA SOLAR",
+    "termsTitle": "Terms of Service | AMMA SOLAR"
+  },
+  "nav": {
+    "home": "Home",
+    "subsidy": "Subsidy",
+    "calculator": "Calculator",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "callNow": "Call Now",
+    "getConsultation": "Free Consultation",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "tagline": "Clean Energy | Brighter Future",
+    "slogan": "Powering Your Future with the Sun",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "addresses": "Office",
+    "hours": "Working Hours",
+    "hoursValue": "Mon–Sat · 9:00 AM – 7:00 PM",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "copyright": "© {year} AMMA SOLAR. All rights reserved.",
+    "policyNote": "Subsidy amounts, loan rates, and scheme deadlines are subject to current government policy."
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "bookSurvey": "Book Free Survey",
+    "checkEligibility": "Check Eligibility",
+    "viewGallery": "View Gallery",
+    "openMaps": "Open in Maps",
+    "required": "Required",
+    "submit": "Submit",
+    "sending": "Sending…",
+    "or": "or",
+    "policyFootnote": "Eligibility, subsidy amounts, loan interest, and deadlines depend on current central/state government policy and may change."
+  },
+  "whatsapp": {
+    "floatLabel": "Chat on WhatsApp",
+    "defaultMessage": "Namaste! I am interested in rooftop solar / PM Surya Ghar subsidy. Please guide me.",
+    "consultationMessage": "Hello AMMA SOLAR, I want a free consultation for solar installation in Nashik.",
+    "surveyMessage": "Hello, I want to book a free site survey with AMMA SOLAR.",
+    "calculatorMessage": "Hello AMMA SOLAR,\nI checked the calculator:\nRecommended: {kw} kW\nEst. cost: ₹{cost}\nSubsidy: ₹{subsidy}\nEMI: ₹{emi}/mo\nMonthly bill: ₹{bill}\nPlease share a detailed quotation."
+  },
+  "hero": {
+    "brand": "AMMA SOLAR",
+    "headline": "Power Your Home With Solar Energy",
+    "subhead": "Government subsidy support, transparent pricing, and expert installation across Nashik.",
+    "ctaPrimary": "Get Free Consultation",
+    "ctaSecondary": "WhatsApp Us",
+    "zeroOffer": "Install solar at home — with support towards ₹0 outlay via subsidy & bank loan*",
+    "deadlineBadge": "Subsidy window till {date}"
+  },
+  "trust": {
+    "title": "Why homeowners trust us",
+    "items": {
+      "subsidy": "Government Subsidy Support",
+      "warranty": "25 Years Panel Warranty",
+      "install": "Expert Installation",
+      "netMeter": "Net Metering Assistance",
+      "loan": "Bank Loan Support"
+    }
+  },
+  "benefits": {
+    "title": "Benefits of going solar",
+    "subtitle": "Lower bills, stronger property value, cleaner energy.",
+    "items": {
+      "savings": { "title": "Save on Electricity Bills", "desc": "Cut monthly power costs with rooftop generation." },
+      "subsidy": { "title": "Government Subsidy", "desc": "Up to ₹78,000 under PM Surya Ghar for eligible homes." },
+      "value": { "title": "Increase Property Value", "desc": "A solar roof is a long-term asset for your home." },
+      "eco": { "title": "Environment Friendly", "desc": "Clean energy for your family and community." },
+      "longevity": { "title": "25 Years of Savings", "desc": "One investment, decades of reliable generation." },
+      "maintenance": { "title": "Low Maintenance", "desc": "Durable systems with minimal upkeep." }
+    }
+  },
+  "subsidyTeaser": {
+    "eyebrow": "PM Surya Ghar Muft Bijli Yojana",
+    "title": "Government solar subsidy — explained clearly",
+    "body": "Eligible residential consumers can get up to ₹78,000 subsidy. We help with documentation, loan processing, installation, and net metering.",
+    "amountLabel": "Max subsidy",
+    "amount": "₹78,000",
+    "deadline": "Last date highlighted in our campaigns: {date}",
+    "cta": "Check Eligibility"
+  },
+  "process": {
+    "title": "Installation process",
+    "subtitle": "From site visit to subsidy — we guide every step.",
+    "steps": {
+      "1": "Site Visit",
+      "2": "Quotation",
+      "3": "Documentation",
+      "4": "Subsidy Approval",
+      "5": "Installation",
+      "6": "Net Metering",
+      "7": "Subsidy Received"
+    }
+  },
+  "whyUs": {
+    "title": "Why choose AMMA SOLAR",
+    "headline": "We don't compete on price alone.",
+    "body": "We focus on quality work, honest service, and customer trust — not only the lowest quote.",
+    "points": {
+      "1": "Please do not compare based only on rates.",
+      "2": "Quality service and customer satisfaction are our goals.",
+      "3": "We are committed to reliable solutions and excellent service.",
+      "4": "Transparent quotations and after-sales support."
+    },
+    "checklistTitle": "What to check during installation",
+    "checklist": {
+      "1": "Solar panel quality & brand",
+      "2": "Inverter capacity & brand",
+      "3": "Mounting structure (GI / Aluminium)",
+      "4": "Cables & connections",
+      "5": "Proper earthing",
+      "6": "Net metering process",
+      "7": "Warranty & service terms",
+      "8": "Experienced installation team",
+      "9": "Complete price transparency",
+      "10": "After-sales grievance support"
+    },
+    "badges": {
+      "quality": "Best Quality",
+      "service": "Honest Service",
+      "satisfaction": "Customer Satisfaction",
+      "clean": "Clean Energy"
+    }
+  },
+  "galleryPreview": {
+    "title": "Our installations",
+    "subtitle": "Real projects and campaign visuals — more site photos coming soon.",
+    "cta": "See Full Gallery"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": {
+      "1": {
+        "q": "What is the maximum PM Surya Ghar subsidy?",
+        "a": "For eligible residential rooftop systems of 3 kW and above, the highlighted subsidy is up to ₹78,000 (1 kW ₹30,000; 2 kW ₹60,000). Final amount depends on government policy and approval."
+      },
+      "2": {
+        "q": "What documents are required?",
+        "a": "Typically Aadhaar, PAN, latest electricity bill, and bank account details. We help you prepare the full file."
+      },
+      "3": {
+        "q": "Is a bank loan available?",
+        "a": "Nationalised bank solar loans are promoted at around 6% annual interest in our campaigns. Actual rates and eligibility depend on the bank."
+      },
+      "4": {
+        "q": "How long do panels last?",
+        "a": "Panel warranties are commonly up to 25 years; inverter warranties are often up to 2 years, depending on brand and terms."
+      }
+    }
+  },
+  "ctaBanner": {
+    "title": "Ready to save on electricity bills?",
+    "body": "Book a free survey with AMMA SOLAR Nashik — Call or WhatsApp Sabir Khan.",
+    "primary": "Book Free Survey",
+    "secondary": "Call Now"
+  },
+  "subsidyPage": {
+    "eyebrow": "PM Surya Ghar",
+    "title": "Government solar subsidy for your home",
+    "intro": "A clear guide to eligibility, subsidy amounts, documents, loans, and timelines — with AMMA SOLAR assistance in Nashik.",
+    "zeroTitle": "Towards ₹0 home solar*",
+    "zeroBody": "Combine government subsidy with nationalised bank solar loan support (promoted at ~6% p.a.) so your upfront burden can be minimised.",
+    "deadlineTitle": "Campaign deadline",
+    "deadlineBody": "Our advertisements highlight {date} as the last date for subsidy benefits. Confirm current official deadlines when you apply.",
+    "eligibilityTitle": "Who is eligible?",
+    "eligibilityBody": "Residential electricity consumers with suitable rooftop space, typically applying under PM Surya Ghar Muft Bijli Yojana. Final eligibility is decided by government portals and DISCOM norms.",
+    "tableTitle": "Subsidy amounts",
+    "tableCapacity": "Capacity",
+    "tableSubsidy": "Subsidy",
+    "sizingTitle": "System size by monthly usage",
+    "sizingUnits": "Avg. monthly units",
+    "sizingKw": "Recommended capacity",
+    "docsTitle": "Required documents",
+    "docs": {
+      "aadhaar": "Aadhaar Card",
+      "pan": "PAN Card",
+      "electricityBill": "Electricity (light) bill",
+      "bankDetails": "Bank account details"
+    },
+    "loanTitle": "Bank finance",
+    "loanBody": "Nationalised bank solar loan — highlighted at only 6% annual interest. Easy process, fast documentation support, ROI often in 3–4 years depending on usage.",
+    "warrantyTitle": "Warranties & service",
+    "warrantyPanel": "Panel warranty up to 25 years",
+    "warrantyInverter": "Inverter warranty up to 2 years",
+    "warrantyTeam": "Installation by an experienced technical team",
+    "processTitle": "Application & installation flow",
+    "faqTitle": "Subsidy FAQs",
+    "ctaTitle": "Want help claiming your subsidy?",
+    "ctaBody": "WhatsApp us your bill photo — we’ll guide capacity, documents, and next steps."
+  },
+  "calculatorPage": {
+    "title": "Solar EMI & savings calculator",
+    "subtitle": "Enter your monthly bill to estimate system size, subsidy, EMI, and savings. Estimates only — final quote after site survey.",
+    "monthlyBill": "Monthly electricity bill (₹)",
+    "roofArea": "Roof area (sq ft) — optional",
+    "budget": "Budget (₹) — optional",
+    "calculate": "Calculate",
+    "results": "Your estimate",
+    "recommended": "Recommended system",
+    "estimatedCost": "Estimated cost",
+    "subsidy": "Estimated subsidy",
+    "netCost": "Net after subsidy",
+    "emi": "Approx. EMI (6%, 60 months)",
+    "monthlySavings": "Est. monthly savings",
+    "payback": "Approx. payback",
+    "years": "{years} years",
+    "kw": "{kw} kW",
+    "whatsappCta": "Get quote on WhatsApp",
+    "disclaimer": "Costs are illustrative averages for planning. Actual pricing depends on brand, structure, and site conditions."
+  },
+  "galleryPage": {
+    "title": "Gallery",
+    "subtitle": "Residential installs and campaign imagery. Replace with your site photos anytime.",
+    "filters": {
+      "all": "All",
+      "residential": "Residential",
+      "installation": "Installation",
+      "beforeAfter": "Before / After"
+    },
+    "empty": "No images in this category yet."
+  },
+  "contactPage": {
+    "title": "Contact AMMA SOLAR",
+    "subtitle": "Talk to Sabir Khan for a free consultation or site survey in Nashik.",
+    "formTitle": "Send an inquiry",
+    "name": "Name",
+    "phone": "Phone",
+    "city": "City",
+    "monthlyBill": "Monthly bill (₹)",
+    "system": "Interested system",
+    "systemOptions": {
+      "residential": "Residential rooftop",
+      "commercial": "Commercial",
+      "farm": "Farm / agri",
+      "unsure": "Not sure yet"
+    },
+    "message": "Message",
+    "submitWhatsapp": "Continue on WhatsApp",
+    "success": "Opening WhatsApp…",
+    "person": "Primary contact",
+    "phoneLabel": "Phone / WhatsApp",
+    "addressLabel": "Addresses"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: July 2026",
+    "body": "AMMA SOLAR collects only the information you share via contact forms or WhatsApp (such as name, phone, city, and electricity bill details) to respond to your inquiry and arrange surveys. We do not sell your data. Messages may be processed on WhatsApp and, when configured, email. Contact us to request deletion of inquiry data we hold."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "updated": "Last updated: July 2026",
+    "body": "Website content is for general information about AMMA SOLAR services and government solar schemes. Subsidy figures, interest rates, and deadlines shown are based on our marketing materials and current publicly promoted scheme details; they are not a legal offer. Final quotations, warranties, and scheme benefits are confirmed in writing after survey and eligibility checks. Maharashtra jurisdiction applies."
+  }
+}
