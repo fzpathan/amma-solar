@@ -36,6 +36,9 @@ export function HeroSection() {
           <p className="mb-3 text-3xl font-extrabold tracking-tight text-yellow sm:text-4xl md:text-5xl">
             {t("brand")}
           </p>
+          <p className="mb-4 inline-flex rounded-full bg-green/20 px-4 py-1.5 text-sm font-semibold text-white ring-1 ring-green/40 sm:text-base">
+            {t("vendorBadge")}
+          </p>
           <h1
             className={`text-3xl font-bold leading-[1.15] text-white sm:text-4xl md:text-5xl ${
               locale === "mr" ? "font-deva" : ""

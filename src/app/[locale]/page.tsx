@@ -2,6 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { BenefitsSection } from "@/components/home/benefits";
+import { CommercialTeaser } from "@/components/home/commercial-teaser";
 import { CtaBanner } from "@/components/home/cta-banner";
 import { FaqSection } from "@/components/home/faq";
 import { GalleryPreview } from "@/components/home/gallery-preview";
@@ -40,6 +41,7 @@ export default async function HomePage({
       <TrustStrip />
       <BenefitsSection />
       <SubsidyTeaser />
+      <CommercialTeaser />
       <ProcessTimeline />
       <WhyUsSection />
       <GalleryPreview />

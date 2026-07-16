@@ -13,6 +13,7 @@ import { LanguageSwitcher } from "@/components/layout/language-switcher";
 const links = [
   { href: "/", key: "home" as const },
   { href: "/subsidy", key: "subsidy" as const },
+  { href: "/commercial", key: "commercial" as const },
   { href: "/calculator", key: "calculator" as const },
   { href: "/gallery", key: "gallery" as const },
   { href: "/contact", key: "contact" as const },

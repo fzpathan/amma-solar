@@ -29,7 +29,7 @@ export function ContactForm() {
     formState: { errors },
   } = useForm<FormValues>({
     resolver: zodResolver(schema),
-    defaultValues: { system: "residential", city: "Nashik" },
+    defaultValues: { system: "residential", city: "Maharashtra" },
   });
 
   const onSubmit = async (data: FormValues) => {
@@ -45,7 +45,7 @@ export function ContactForm() {
     }
 
     const text = [
-      "AMMA SOLAR inquiry",
+      "Amma Solar inquiry",
       `Name: ${data.name}`,
       `Phone: ${data.phone}`,
       `City: ${data.city}`,

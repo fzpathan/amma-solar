@@ -35,6 +35,9 @@ export default async function ContactPage({
             {t("title")}
           </h1>
           <p className="mt-4 text-lg text-muted">{t("subtitle")}</p>
+          <p className="mt-3 rounded-2xl bg-green/10 px-4 py-3 text-base font-medium text-navy">
+            {t("vendorNote")}
+          </p>
         </div>
 
         <div className="grid gap-10 lg:grid-cols-2">
@@ -63,20 +66,23 @@ export default async function ContactPage({
                   <p className="text-lg font-semibold">{siteConfig.phoneDisplay}</p>
                 </div>
               </a>
-              <a
-                href={`mailto:${siteConfig.email}`}
-                className="mt-4 flex items-center gap-3 text-navy hover:text-green"
-              >
-                <Mail className="h-5 w-5 text-green" />
-                <div>
-                  <p className="text-sm uppercase tracking-wider text-muted">
-                    Email
-                  </p>
-                  <p className="break-all text-base font-semibold">
-                    {siteConfig.email}
-                  </p>
-                </div>
-              </a>
+              <div className="mt-4">
+                <p className="mb-2 text-sm uppercase tracking-wider text-muted">
+                  {t("emailsLabel")}
+                </p>
+                {siteConfig.emails.map((email) => (
+                  <a
+                    key={email}
+                    href={`mailto:${email}`}
+                    className="mt-2 flex items-center gap-3 text-navy hover:text-green"
+                  >
+                    <Mail className="h-5 w-5 shrink-0 text-green" />
+                    <span className="break-all text-base font-semibold">
+                      {email}
+                    </span>
+                  </a>
+                ))}
+              </div>
             </div>
 
             <div>
@@ -108,7 +114,7 @@ export default async function ContactPage({
 
             <div className="overflow-hidden rounded-3xl soft-shadow">
               <iframe
-                title="AMMA SOLAR Nashik map"
+                title="Amma Solar map"
                 src="https://maps.google.com/maps?q=Ashoka%20Marg%20Nashik%20422006&t=&z=14&ie=UTF8&iwloc=&output=embed"
                 className="h-64 w-full border-0"
                 loading="lazy"

@@ -1,19 +1,21 @@
 {
   "meta": {
-    "siteName": "AMMA SOLAR",
-    "defaultTitle": "AMMA SOLAR | Solar Installation & PM Surya Ghar Subsidy Nashik",
-    "defaultDescription": "Trusted rooftop solar partner in Nashik. Government subsidy up to ₹78,000, bank loan support, net metering, and expert installation. Free consultation.",
-    "homeTitle": "Home | AMMA SOLAR Nashik",
-    "subsidyTitle": "PM Surya Ghar Subsidy | AMMA SOLAR",
-    "subsidyDescription": "Check eligibility, subsidy amounts, documents, and process for PM Surya Ghar Muft Bijli Yojana in Maharashtra with AMMA SOLAR Nashik.",
-    "calculatorTitle": "Solar EMI & Savings Calculator | AMMA SOLAR",
+    "siteName": "Amma Solar",
+    "defaultTitle": "Amma Solar | Solar Installation & PM Surya Ghar Subsidy Maharashtra",
+    "defaultDescription": "Trusted rooftop solar partner across Maharashtra. Authorised MSEDCL vendor. Residential subsidy up to ₹78,000, commercial & industrial solar for lower operating costs. Free consultation.",
+    "homeTitle": "Home | Amma Solar Maharashtra",
+    "subsidyTitle": "PM Surya Ghar Subsidy | Amma Solar",
+    "subsidyDescription": "Check eligibility, subsidy amounts, documents, and process for PM Surya Ghar Muft Bijli Yojana in Maharashtra with Amma Solar.",
+    "calculatorTitle": "Solar EMI & Savings Calculator | Amma Solar",
     "calculatorDescription": "Estimate system size, subsidy, EMI at 6%, and monthly savings for your home electricity bill.",
-    "galleryTitle": "Installation Gallery | AMMA SOLAR",
-    "galleryDescription": "Residential solar installations and project photos by AMMA SOLAR Nashik.",
-    "contactTitle": "Contact | AMMA SOLAR Nashik",
-    "contactDescription": "Book a free site survey with Sabir Khan. Call or WhatsApp AMMA SOLAR in Nashik.",
-    "privacyTitle": "Privacy Policy | AMMA SOLAR",
-    "termsTitle": "Terms of Service | AMMA SOLAR"
+    "galleryTitle": "Installation Gallery | Amma Solar",
+    "galleryDescription": "Residential solar installations and project photos by Amma Solar Maharashtra.",
+    "contactTitle": "Contact | Amma Solar",
+    "contactDescription": "Book a free site survey. Call or WhatsApp Amma Solar — installation across any city in Maharashtra.",
+    "privacyTitle": "Privacy Policy | Amma Solar",
+    "termsTitle": "Terms of Service | Amma Solar",
+    "commercialTitle": "Commercial & Industrial Solar | Amma Solar",
+    "commercialDescription": "Solar for factories, warehouses, shops and offices in Maharashtra. Net metering, tax benefits, open access guidance. Contact munirahmedkhannsk@gmail.com or alimkhan1@gmail.com."
   },
   "nav": {
     "home": "Home",
@@ -23,7 +25,8 @@
     "contact": "Contact",
     "callNow": "Call Now",
     "getConsultation": "Free Consultation",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "commercial": "Commercial & Industrial"
   },
   "footer": {
     "tagline": "Clean Energy | Brighter Future",
@@ -35,8 +38,9 @@
     "hoursValue": "Mon–Sat · 9:00 AM – 7:00 PM",
     "privacy": "Privacy",
     "terms": "Terms",
-    "copyright": "© {year} AMMA SOLAR. All rights reserved.",
-    "policyNote": "Subsidy amounts, loan rates, and scheme deadlines are subject to current government policy."
+    "copyright": "© {year} Amma Solar. All rights reserved.",
+    "policyNote": "Subsidy amounts, loan rates, and scheme deadlines are subject to current government policy.",
+    "vendor": "Authorised MSEDCL vendor — Maharashtra statewide installation"
   },
   "common": {
     "learnMore": "Learn More",
@@ -53,18 +57,20 @@
   "whatsapp": {
     "floatLabel": "Chat on WhatsApp",
     "defaultMessage": "Namaste! I am interested in rooftop solar / PM Surya Ghar subsidy. Please guide me.",
-    "consultationMessage": "Hello AMMA SOLAR, I want a free consultation for solar installation in Nashik.",
-    "surveyMessage": "Hello, I want to book a free site survey with AMMA SOLAR.",
-    "calculatorMessage": "Hello AMMA SOLAR,\nI checked the calculator:\nRecommended: {kw} kW\nEst. cost: ₹{cost}\nSubsidy: ₹{subsidy}\nEMI: ₹{emi}/mo\nMonthly bill: ₹{bill}\nPlease share a detailed quotation."
+    "consultationMessage": "Hello Amma Solar, I want a free consultation for solar installation in Maharashtra.",
+    "surveyMessage": "Hello, I want to book a free site survey with Amma Solar.",
+    "calculatorMessage": "Hello Amma Solar,\nI checked the calculator:\nRecommended: {kw} kW\nEst. cost: ₹{cost}\nSubsidy: ₹{subsidy}\nEMI: ₹{emi}/mo\nMonthly bill: ₹{bill}\nPlease share a detailed quotation.",
+    "commercialMessage": "Hello Amma Solar,\nI am interested in Commercial / Industrial solar for our facility in Maharashtra.\nPlease contact me with a project consultation."
   },
   "hero": {
-    "brand": "AMMA SOLAR",
+    "brand": "Amma Solar",
     "headline": "Power Your Home With Solar Energy",
-    "subhead": "Government subsidy support, transparent pricing, and expert installation across Nashik.",
+    "subhead": "Authorised MSEDCL vendor for Maharashtra. Installation across any city in the state — subsidy support, transparent pricing, expert teams.",
     "ctaPrimary": "Get Free Consultation",
     "ctaSecondary": "WhatsApp Us",
     "zeroOffer": "Install solar at home — with support towards ₹0 outlay via subsidy & bank loan*",
-    "deadlineBadge": "Subsidy window till {date}"
+    "deadlineBadge": "Subsidy window till {date}",
+    "vendorBadge": "Authorised vendor of MSEDCL · Maharashtra"
   },
   "trust": {
     "title": "Why homeowners trust us",
@@ -80,12 +86,30 @@
     "title": "Benefits of going solar",
     "subtitle": "Lower bills, stronger property value, cleaner energy.",
     "items": {
-      "savings": { "title": "Save on Electricity Bills", "desc": "Cut monthly power costs with rooftop generation." },
-      "subsidy": { "title": "Government Subsidy", "desc": "Up to ₹78,000 under PM Surya Ghar for eligible homes." },
-      "value": { "title": "Increase Property Value", "desc": "A solar roof is a long-term asset for your home." },
-      "eco": { "title": "Environment Friendly", "desc": "Clean energy for your family and community." },
-      "longevity": { "title": "25 Years of Savings", "desc": "One investment, decades of reliable generation." },
-      "maintenance": { "title": "Low Maintenance", "desc": "Durable systems with minimal upkeep." }
+      "savings": {
+        "title": "Save on Electricity Bills",
+        "desc": "Cut monthly power costs with rooftop generation."
+      },
+      "subsidy": {
+        "title": "Government Subsidy",
+        "desc": "Up to ₹78,000 under PM Surya Ghar for eligible homes."
+      },
+      "value": {
+        "title": "Increase Property Value",
+        "desc": "A solar roof is a long-term asset for your home."
+      },
+      "eco": {
+        "title": "Environment Friendly",
+        "desc": "Clean energy for your family and community."
+      },
+      "longevity": {
+        "title": "25 Years of Savings",
+        "desc": "One investment, decades of reliable generation."
+      },
+      "maintenance": {
+        "title": "Low Maintenance",
+        "desc": "Durable systems with minimal upkeep."
+      }
     }
   },
   "subsidyTeaser": {
@@ -111,7 +135,7 @@
     }
   },
   "whyUs": {
-    "title": "Why choose AMMA SOLAR",
+    "title": "Why choose Amma Solar",
     "headline": "We don't compete on price alone.",
     "body": "We focus on quality work, honest service, and customer trust — not only the lowest quote.",
     "points": {
@@ -168,14 +192,14 @@
   },
   "ctaBanner": {
     "title": "Ready to save on electricity bills?",
-    "body": "Book a free survey with AMMA SOLAR Nashik — Call or WhatsApp Sabir Khan.",
+    "body": "Book a free survey with Amma Solar — Call or WhatsApp. We install across Maharashtra.",
     "primary": "Book Free Survey",
     "secondary": "Call Now"
   },
   "subsidyPage": {
     "eyebrow": "PM Surya Ghar",
     "title": "Government solar subsidy for your home",
-    "intro": "A clear guide to eligibility, subsidy amounts, documents, loans, and timelines — with AMMA SOLAR assistance in Nashik.",
+    "intro": "A clear guide to eligibility, subsidy amounts, documents, loans, and timelines — with Amma Solar assistance across Maharashtra.",
     "zeroTitle": "Towards ₹0 home solar*",
     "zeroBody": "Combine government subsidy with nationalised bank solar loan support (promoted at ~6% p.a.) so your upfront burden can be minimised.",
     "deadlineTitle": "Campaign deadline",
@@ -238,8 +262,8 @@
     "empty": "No images in this category yet."
   },
   "contactPage": {
-    "title": "Contact AMMA SOLAR",
-    "subtitle": "Talk to Sabir Khan for a free consultation or site survey in Nashik.",
+    "title": "Contact Amma Solar",
+    "subtitle": "Talk to us for a free consultation or site survey. Residential, commercial & industrial — any city in Maharashtra.",
     "formTitle": "Send an inquiry",
     "name": "Name",
     "phone": "Phone",
@@ -257,16 +281,118 @@
     "success": "Opening WhatsApp…",
     "person": "Primary contact",
     "phoneLabel": "Phone / WhatsApp",
-    "addressLabel": "Addresses"
+    "addressLabel": "Addresses",
+    "emailsLabel": "Email",
+    "vendorNote": "Authorised vendor of MSEDCL (Maharashtra State Electricity Distribution Co. Ltd.) for Maharashtra state."
   },
   "privacy": {
     "title": "Privacy Policy",
     "updated": "Last updated: July 2026",
-    "body": "AMMA SOLAR collects only the information you share via contact forms or WhatsApp (such as name, phone, city, and electricity bill details) to respond to your inquiry and arrange surveys. We do not sell your data. Messages may be processed on WhatsApp and, when configured, email. Contact us to request deletion of inquiry data we hold."
+    "body": "Amma Solar collects only the information you share via contact forms or WhatsApp (such as name, phone, city, and electricity bill details) to respond to your inquiry and arrange surveys. We do not sell your data. Messages may be processed on WhatsApp and, when configured, email. Contact us to request deletion of inquiry data we hold."
   },
   "terms": {
     "title": "Terms of Service",
     "updated": "Last updated: July 2026",
-    "body": "Website content is for general information about AMMA SOLAR services and government solar schemes. Subsidy figures, interest rates, and deadlines shown are based on our marketing materials and current publicly promoted scheme details; they are not a legal offer. Final quotations, warranties, and scheme benefits are confirmed in writing after survey and eligibility checks. Maharashtra jurisdiction applies."
+    "body": "Website content is for general information about Amma Solar services and government solar schemes. Subsidy figures, interest rates, and deadlines shown are based on our marketing materials and current publicly promoted scheme details; they are not a legal offer. Final quotations, warranties, and scheme benefits are confirmed in writing after survey and eligibility checks. Maharashtra jurisdiction applies."
+  },
+  "commercialTeaser": {
+    "eyebrow": "Business & industry",
+    "title": "Commercial & industrial solar for lower operating costs",
+    "body": "Factories, warehouses, shops, offices and industrial parks can cut electricity spend with rooftop or ground-mounted solar — with net metering, tax benefits and project financing guidance.",
+    "cta": "Explore C&I solutions"
+  },
+  "commercialPage": {
+    "eyebrow": "Commercial & Industrial",
+    "title": "Solar energy for businesses and industries",
+    "intro": "Amma Solar helps commercial and industrial consumers across Maharashtra adopt solar for long-term economy — lower bills, stronger energy security, and clearer project economics.",
+    "vendor": "Authorised vendor of MSEDCL for Maharashtra state. We support installation in any city across Maharashtra.",
+    "whoTitle": "Who this is for",
+    "who": {
+      "1": "Factories & manufacturing units",
+      "2": "Warehouses & logistics parks",
+      "3": "Shops, malls & commercial complexes",
+      "4": "Offices, hotels & institutions",
+      "5": "Industrial estates & MSMEs"
+    },
+    "whyTitle": "Why industries go solar",
+    "why": {
+      "1": {
+        "title": "Lower operating costs",
+        "desc": "Offset high commercial/industrial tariffs with daytime solar generation."
+      },
+      "2": {
+        "title": "Predictable energy spend",
+        "desc": "Reduce exposure to rising grid tariffs over 20+ years of plant life."
+      },
+      "3": {
+        "title": "ESG & brand value",
+        "desc": "Demonstrate clean energy commitment to customers and auditors."
+      },
+      "4": {
+        "title": "RPO / compliance support",
+        "desc": "Help larger HT/EHT consumers plan renewable purchase obligations where applicable."
+      }
+    },
+    "financeTitle": "Subsidies & financial assistance (India & Maharashtra)",
+    "financeIntro": "Unlike residential PM Surya Ghar, commercial and industrial connections generally do not receive central capital subsidy (CFA). Savings come from policy incentives, tax treatment, net metering / open access, and financing. Always verify current MERC/MSEDCL/MNRE rules before committing.",
+    "noCfaTitle": "Important: no PM Surya Ghar CFA for C&I",
+    "noCfaBody": "Central Financial Assistance under PM Surya Ghar Muft Bijli Yojana is for residential (domestic) consumers. Commercial and industrial tariff categories are not eligible for that capital subsidy.",
+    "indiaTitle": "India-wide / central levers",
+    "india": {
+      "1": {
+        "title": "Accelerated depreciation",
+        "desc": "Businesses can typically claim accelerated depreciation on solar assets (commonly cited around 40% in year one under current Income Tax rules for eligible plant — confirm with your CA)."
+      },
+      "2": {
+        "title": "Bank / NBFC project finance",
+        "desc": "Term loans and green financing products from banks and NBFCs for rooftop and captive C&I solar; rates and tenure depend on credit profile."
+      },
+      "3": {
+        "title": "RESCO / OPEX models",
+        "desc": "Third-party ownership models can reduce upfront CapEx — power purchase at agreed tariffs (structure subject to regulation and contracts)."
+      },
+      "4": {
+        "title": "ALMM / quality compliance",
+        "desc": "MNRE ALMM-listed modules and compliant design improve bankability and DISCOM acceptance."
+      }
+    },
+    "mhTitle": "Maharashtra-specific support",
+    "mh": {
+      "1": {
+        "title": "MSEDCL net metering",
+        "desc": "Eligible C&I consumers can apply for grid-interactive rooftop solar with net metering / related metering arrangements under MERC regulations via MSEDCL processes."
+      },
+      "2": {
+        "title": "Electricity duty relief (policy-linked)",
+        "desc": "Maharashtra renewable energy / storage policy frameworks have promoted duty exemptions for certain captive / BESS-linked projects (e.g. multi-year duty holidays where conditions are met). Eligibility is project-specific."
+      },
+      "3": {
+        "title": "Green Energy Open Access",
+        "desc": "Consumers meeting contract-demand thresholds (commonly 100 kW+) may explore green open access; banking and charges follow MERC rules and change over time."
+      },
+      "4": {
+        "title": "Grid support / ToD banking rules",
+        "desc": "MERC orders may apply grid support charges above certain sizes and time-of-day banking rules for non-residential consumers. We model these into project economics."
+      },
+      "5": {
+        "title": "RPO for large consumers",
+        "desc": "Covered HT/EHT consumers may have renewable purchase obligations — onsite or contracted solar can support compliance planning."
+      }
+    },
+    "processTitle": "How we deliver C&I projects",
+    "process": {
+      "1": "Load & bill study",
+      "2": "Site / roof assessment",
+      "3": "Technical & financial proposal",
+      "4": "MSEDCL / approvals support",
+      "5": "Supply, install & commission",
+      "6": "Handover & after-sales"
+    },
+    "contactTitle": "For commercial & industrial solar projects",
+    "contactBody": "Please email your unit location, sanctioned load / monthly bill, and roof or land details. We will respond with a project consultation.",
+    "email1": "munirahmedkhannsk@gmail.com",
+    "email2": "alimkhan1@gmail.com",
+    "orCall": "Or call / WhatsApp",
+    "footnote": "Incentives, charges, and eligibility depend on current central and Maharashtra (MERC/MSEDCL/MNRE) policy and may change. This page is informational, not a legal or tax opinion."
   }
 }

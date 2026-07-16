@@ -1,14 +1,24 @@
 export const siteConfig = {
-  name: "AMMA SOLAR",
+  name: "Amma Solar",
   contactPerson: "Sabir Khan",
   phone: "9588478692",
   phoneDisplay: "+91 95884 78692",
   whatsapp: "919588478692",
   email: "munirahmedkhannsk@gmail.com",
+  emails: ["munirahmedkhannsk@gmail.com", "alimkhan1@gmail.com"] as const,
+  commercialEmails: [
+    "munirahmedkhannsk@gmail.com",
+    "alimkhan1@gmail.com",
+  ] as const,
   city: "Nashik",
+  serviceArea: "Maharashtra",
   pincode: "422006",
   state: "Maharashtra",
   country: "India",
+  vendorNote: {
+    en: "Authorised vendor of MSEDCL (Maharashtra State Electricity Distribution Co. Ltd.) for Maharashtra state. Installation available across any city in Maharashtra.",
+    mr: "महाराष्ट्र राज्यासाठी एमएसईडीसीएल (महाराष्ट्र राज्य विद्युत वितरण कंपनी मर्यादित) चे अधिकृत विक्रेता. महाराष्ट्रातील कोणत्याही शहरात इंस्टॉलेशन उपलब्ध.",
+  },
   addresses: [
     {
       id: "ashoka",
@@ -67,4 +77,9 @@ export function telHref(): string {
 
 export function mapsUrl(query: string): string {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+}
+
+export function mailto(email: string, subject?: string): string {
+  const q = subject ? `?subject=${encodeURIComponent(subject)}` : "";
+  return `mailto:${email}${q}`;
 }

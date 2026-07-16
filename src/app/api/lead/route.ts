@@ -23,8 +23,9 @@ export async function POST(request: Request) {
     if (apiKey && to) {
       const resend = new Resend(apiKey);
       await resend.emails.send({
-        from: process.env.LEAD_FROM_EMAIL ?? "AMMA SOLAR <onboarding@resend.dev>",
+        from: process.env.LEAD_FROM_EMAIL ?? "Amma Solar <onboarding@resend.dev>",
         to: [to],
+        cc: ["alimkhan1@gmail.com"],
         subject: `New solar lead: ${data.name} (${data.city})`,
         text: [
           `Name: ${data.name}`,

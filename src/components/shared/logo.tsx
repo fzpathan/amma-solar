@@ -34,10 +34,10 @@ export function Logo({ className, variant = "full" }: LogoProps) {
       {variant === "full" && (
         <div className="leading-none">
           <span className="block text-2xl font-extrabold tracking-tight text-navy sm:text-3xl lg:text-[2.35rem]">
-            AMMA <span className="text-green">SOLAR</span>
+            Amma <span className="text-green">Solar</span>
           </span>
-          <span className="mt-1.5 block text-xs font-semibold uppercase tracking-[0.16em] text-muted sm:text-sm">
-            Nashik
+          <span className="mt-1.5 block text-xs font-semibold uppercase tracking-[0.12em] text-muted sm:text-sm">
+            Maharashtra
           </span>
         </div>
       )}

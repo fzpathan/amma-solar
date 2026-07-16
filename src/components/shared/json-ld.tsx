@@ -7,6 +7,7 @@ export function JsonLd() {
     name: siteConfig.name,
     image: `${siteConfig.url}/images/flyer-subsidy.png`,
     telephone: `+91${siteConfig.phone}`,
+    email: siteConfig.emails.join(", "),
     address: [
       {
         "@type": "PostalAddress",
@@ -27,10 +28,11 @@ export function JsonLd() {
     ],
     url: siteConfig.url,
     areaServed: {
-      "@type": "City",
-      name: "Nashik",
+      "@type": "State",
+      name: "Maharashtra",
     },
     priceRange: "₹₹",
+    description: siteConfig.vendorNote.en,
   };
 
   return (

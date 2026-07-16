@@ -16,6 +16,7 @@ export async function Footer() {
           <Logo className="[&_span]:text-white [&_span.text-green]:text-yellow [&_span.text-muted]:text-white/60" />
           <p className="text-sm text-white/70">{t("tagline")}</p>
           <p className="text-sm font-medium text-yellow">{t("slogan")}</p>
+          <p className="text-sm text-white/65">{t("vendor")}</p>
         </div>
 
         <div>
@@ -27,6 +28,7 @@ export async function Footer() {
               [
                 ["/", "home"],
                 ["/subsidy", "subsidy"],
+                ["/commercial", "commercial"],
                 ["/calculator", "calculator"],
                 ["/gallery", "gallery"],
                 ["/contact", "contact"],
