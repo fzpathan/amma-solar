@@ -62,7 +62,7 @@ export const siteConfig = {
   panelWarrantyYears: 25,
   inverterWarrantyYears: 2,
   documents: ["aadhaar", "pan", "electricityBill", "bankDetails"] as const,
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://amma-solar.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.ammasolar.com",
 } as const;
 
 export function whatsappUrl(text?: string): string {
