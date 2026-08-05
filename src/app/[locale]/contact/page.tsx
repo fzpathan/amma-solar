@@ -43,30 +43,40 @@ export default async function ContactPage({
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="space-y-6">
             <div className="rounded-3xl bg-surface p-6 soft-shadow">
-              <div className="flex items-center gap-3">
-                <User className="h-5 w-5 text-green" />
-                <div>
-                  <p className="text-sm uppercase tracking-wider text-muted">
-                    {t("person")}
-                  </p>
-                  <p className="text-lg font-semibold text-navy">
-                    {siteConfig.contactPerson}
-                  </p>
-                </div>
-              </div>
-              <a
-                href={telHref()}
-                className="mt-4 flex items-center gap-3 text-navy hover:text-green"
-              >
-                <Phone className="h-5 w-5 text-green" />
-                <div>
-                  <p className="text-sm uppercase tracking-wider text-muted">
-                    {t("phoneLabel")}
-                  </p>
-                  <p className="text-lg font-semibold">{siteConfig.phoneDisplay}</p>
-                </div>
-              </a>
-              <div className="mt-4">
+              <p className="text-sm uppercase tracking-wider text-muted">
+                {t("person")}
+              </p>
+              <ul className="mt-4 space-y-5">
+                {siteConfig.contacts.map((person) => (
+                  <li
+                    key={person.phone}
+                    className="border-b border-border/70 pb-5 last:border-0 last:pb-0"
+                  >
+                    <div className="flex items-center gap-3">
+                      <User className="h-5 w-5 text-green" />
+                      <p className="text-lg font-semibold text-navy">
+                        {person.name}
+                      </p>
+                    </div>
+                    <a
+                      href={telHref(person.phone)}
+                      className="mt-2 flex items-center gap-3 text-navy hover:text-green"
+                    >
+                      <Phone className="h-5 w-5 text-green" />
+                      <div>
+                        <p className="text-sm uppercase tracking-wider text-muted">
+                          {t("phoneLabel")}
+                        </p>
+                        <p className="text-lg font-semibold">
+                          {person.phoneDisplay}
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-6 border-t border-border/70 pt-5">
                 <p className="mb-2 text-sm uppercase tracking-wider text-muted">
                   {t("emailsLabel")}
                 </p>

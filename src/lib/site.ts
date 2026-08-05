@@ -1,9 +1,23 @@
 export const siteConfig = {
   name: "Amma Solar",
-  contactPerson: "Sabir Khan",
-  phone: "9588478692",
-  phoneDisplay: "+91 95884 78692",
-  whatsapp: "919588478692",
+  contacts: [
+    {
+      name: "Munir Ahmed Khan",
+      phone: "9373905562",
+      phoneDisplay: "+91 93739 05562",
+      whatsapp: "919373905562",
+    },
+    {
+      name: "Sabir Khan",
+      phone: "9588478692",
+      phoneDisplay: "+91 95884 78692",
+      whatsapp: "919588478692",
+    },
+  ] as const,
+  contactPerson: "Munir Ahmed Khan",
+  phone: "9373905562",
+  phoneDisplay: "+91 93739 05562",
+  whatsapp: "919373905562",
   email: "munirahmedkhannsk@gmail.com",
   emails: ["munirahmedkhannsk@gmail.com", "alimkhan1@gmail.com"] as const,
   commercialEmails: [
@@ -65,14 +79,15 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.ammasolar.com",
 } as const;
 
-export function whatsappUrl(text?: string): string {
-  const base = `https://wa.me/${siteConfig.whatsapp}`;
+export function whatsappUrl(text?: string, whatsappId?: string): string {
+  const id = whatsappId ?? siteConfig.whatsapp;
+  const base = `https://wa.me/${id}`;
   if (!text) return base;
   return `${base}?text=${encodeURIComponent(text)}`;
 }
 
-export function telHref(): string {
-  return `tel:+91${siteConfig.phone}`;
+export function telHref(phone?: string): string {
+  return `tel:+91${phone ?? siteConfig.phone}`;
 }
 
 export function mapsUrl(query: string): string {

@@ -47,14 +47,20 @@ export async function Footer() {
           <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/50">
             {t("contact")}
           </h3>
-          <p className="text-sm font-semibold">{siteConfig.contactPerson}</p>
-          <a
-            href={telHref()}
-            className="mt-2 inline-flex items-center gap-2 text-sm text-yellow hover:underline"
-          >
-            <Phone className="h-4 w-4" />
-            {siteConfig.phoneDisplay}
-          </a>
+          <ul className="space-y-4">
+            {siteConfig.contacts.map((person) => (
+              <li key={person.phone}>
+                <p className="text-sm font-semibold">{person.name}</p>
+                <a
+                  href={telHref(person.phone)}
+                  className="mt-1 inline-flex items-center gap-2 text-sm text-yellow hover:underline"
+                >
+                  <Phone className="h-4 w-4" />
+                  {person.phoneDisplay}
+                </a>
+              </li>
+            ))}
+          </ul>
           <p className="mt-4 text-xs uppercase tracking-wider text-white/50">
             {t("hours")}
           </p>
