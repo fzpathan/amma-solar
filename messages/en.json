@@ -70,13 +70,15 @@
     "ctaSecondary": "WhatsApp Us",
     "zeroOffer": "Install solar at home — with support towards ₹0 outlay via subsidy & bank loan*",
     "deadlineBadge": "Subsidy window till {date}",
+    "panelWarranty": "Panel warranty up to 30 years",
+    "inverterWarranty": "Inverter warranty up to 10 years",
     "vendorBadge": "Authorised vendor of MSEDCL · Maharashtra"
   },
   "trust": {
     "title": "Why homeowners trust us",
     "items": {
       "subsidy": "Government Subsidy Support",
-      "warranty": "25 Years Panel Warranty",
+      "warranty": "Panel 30 Yr · Inverter 10 Yr Warranty",
       "install": "Expert Installation",
       "netMeter": "Net Metering Assistance",
       "loan": "Bank Loan Support"
@@ -103,7 +105,7 @@
         "desc": "Clean energy for your family and community."
       },
       "longevity": {
-        "title": "25 Years of Savings",
+        "title": "30 Years of Savings",
         "desc": "One investment, decades of reliable generation."
       },
       "maintenance": {
@@ -166,7 +168,7 @@
   },
   "galleryPreview": {
     "title": "Our installations",
-    "subtitle": "Real projects and campaign visuals — more site photos coming soon.",
+    "subtitle": "Real rooftop installations by Amma Solar across Maharashtra.",
     "cta": "See Full Gallery"
   },
   "faq": {
@@ -186,7 +188,7 @@
       },
       "4": {
         "q": "How long do panels last?",
-        "a": "Panel warranties are commonly up to 25 years; inverter warranties are often up to 2 years, depending on brand and terms."
+        "a": "Panel warranty up to 30 years; inverter warranty up to 10 years, depending on brand and terms."
       }
     }
   },
@@ -222,8 +224,8 @@
     "loanTitle": "Bank finance",
     "loanBody": "Nationalised bank solar loan — highlighted at only 6% annual interest. Easy process, fast documentation support, ROI often in 3–4 years depending on usage.",
     "warrantyTitle": "Warranties & service",
-    "warrantyPanel": "Panel warranty up to 25 years",
-    "warrantyInverter": "Inverter warranty up to 2 years",
+    "warrantyPanel": "Panel warranty up to 30 years",
+    "warrantyInverter": "Inverter warranty up to 10 years",
     "warrantyTeam": "Installation by an experienced technical team",
     "processTitle": "Application & installation flow",
     "faqTitle": "Subsidy FAQs",
@@ -252,7 +254,7 @@
   },
   "galleryPage": {
     "title": "Gallery",
-    "subtitle": "Residential installs and campaign imagery. Replace with your site photos anytime.",
+    "subtitle": "Real rooftop solar installations by Amma Solar.",
     "filters": {
       "all": "All",
       "residential": "Residential",

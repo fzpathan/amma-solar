@@ -73,8 +73,8 @@ export const siteConfig = {
     { units: "301+", kw: "3 kW+" },
   ],
   loanInterestPercent: 6,
-  panelWarrantyYears: 25,
-  inverterWarrantyYears: 2,
+  panelWarrantyYears: 30,
+  inverterWarrantyYears: 10,
   documents: ["aadhaar", "pan", "electricityBill", "bankDetails"] as const,
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.ammasolar.com",
 } as const;

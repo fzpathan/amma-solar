@@ -3,45 +3,21 @@
 import Image from "next/image";
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { galleryImages } from "@/lib/gallery";
 import { cn } from "@/lib/utils";
 
 type Category = "all" | "residential" | "installation" | "beforeAfter";
-
-const items: { src: string; category: Exclude<Category, "all">; alt: string }[] =
-  [
-    {
-      src: "/gallery/residential-1.png",
-      category: "residential",
-      alt: "AMMA SOLAR trust flyer / install visual",
-    },
-    {
-      src: "/gallery/installation-1.png",
-      category: "installation",
-      alt: "PM Surya Ghar campaign visual",
-    },
-    {
-      src: "/gallery/residential-2.png",
-      category: "residential",
-      alt: "Solar subsidy campaign home visual",
-    },
-    {
-      src: "/images/flyer-trust.png",
-      category: "beforeAfter",
-      alt: "Customer trust campaign",
-    },
-  ];
 
 export function GalleryGrid() {
   const t = useTranslations("galleryPage");
   const [filter, setFilter] = useState<Category>("all");
 
-  const filters: Category[] = ["all", "residential", "installation", "beforeAfter"];
+  const filters: Category[] = ["all", "residential", "installation"];
 
-  const visible = useMemo(
-    () =>
-      filter === "all" ? items : items.filter((i) => i.category === filter),
-    [filter]
-  );
+  const visible = useMemo(() => {
+    if (filter === "all") return galleryImages;
+    return galleryImages.filter((i) => i.category === filter);
+  }, [filter]);
 
   return (
     <div>
@@ -66,10 +42,10 @@ export function GalleryGrid() {
       {visible.length === 0 ? (
         <p className="text-muted">{t("empty")}</p>
       ) : (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2">
           {visible.map((item) => (
             <div
-              key={`${item.src}-${item.category}`}
+              key={item.src}
               className="relative aspect-[4/3] overflow-hidden rounded-2xl soft-shadow"
             >
               <Image
@@ -77,7 +53,7 @@ export function GalleryGrid() {
                 alt={item.alt}
                 fill
                 className="object-cover transition duration-500 hover:scale-105"
-                sizes="(max-width:768px) 100vw, 33vw"
+                sizes="(max-width:768px) 100vw, 50vw"
               />
             </div>
           ))}

@@ -1,13 +1,8 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { galleryImages } from "@/lib/gallery";
 import { Button } from "@/components/ui/button";
-
-const previews = [
-  { src: "/gallery/residential-1.png", alt: "AMMA SOLAR residential" },
-  { src: "/gallery/installation-1.png", alt: "AMMA SOLAR subsidy campaign" },
-  { src: "/gallery/residential-2.png", alt: "AMMA SOLAR solar home" },
-];
 
 export async function GalleryPreview() {
   const t = await getTranslations("galleryPreview");
@@ -26,8 +21,8 @@ export async function GalleryPreview() {
             <Link href="/gallery">{t("cta")}</Link>
           </Button>
         </div>
-        <div className="grid gap-4 md:grid-cols-3">
-          {previews.map((img) => (
+        <div className="grid gap-4 sm:grid-cols-2">
+          {galleryImages.map((img) => (
             <div
               key={img.src}
               className="relative aspect-[4/3] overflow-hidden rounded-2xl soft-shadow"
@@ -37,7 +32,7 @@ export async function GalleryPreview() {
                 alt={img.alt}
                 fill
                 className="object-cover transition duration-500 hover:scale-105"
-                sizes="(max-width:768px) 100vw, 33vw"
+                sizes="(max-width:768px) 100vw, 50vw"
               />
             </div>
           ))}

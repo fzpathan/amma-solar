@@ -1,11 +1,12 @@
 import { siteConfig } from "@/lib/site";
+import { heroImage } from "@/lib/gallery";
 
 export function JsonLd() {
   const data = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: siteConfig.name,
-    image: `${siteConfig.url}/images/flyer-subsidy.png`,
+    image: `${siteConfig.url}${heroImage}`,
     telephone: `+91${siteConfig.phone}`,
     email: siteConfig.emails.join(", "),
     address: [

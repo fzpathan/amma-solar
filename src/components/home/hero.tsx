@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
+import { heroImage } from "@/lib/gallery";
 import { siteConfig, whatsappUrl } from "@/lib/site";
 import { Button } from "@/components/ui/button";
 
@@ -19,8 +20,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url(https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2000&q=80)",
+          backgroundImage: `url(${heroImage})`,
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/75 via-navy/70 to-navy-deep/90" />
@@ -52,6 +52,14 @@ export function HeroSection() {
           <p className="mt-4 inline-flex rounded-full bg-yellow/15 px-4 py-2 text-base font-medium text-yellow ring-1 ring-yellow/30">
             {t("deadlineBadge", { date: deadline })}
           </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <span className="inline-flex rounded-full bg-white/15 px-4 py-2 text-sm font-semibold text-white ring-1 ring-white/25 sm:text-base">
+              {t("panelWarranty")}
+            </span>
+            <span className="inline-flex rounded-full bg-white/15 px-4 py-2 text-sm font-semibold text-white ring-1 ring-white/25 sm:text-base">
+              {t("inverterWarranty")}
+            </span>
+          </div>
           <p className="mt-4 max-w-xl text-base text-white/80 sm:text-lg">
             {t("zeroOffer")}
           </p>
