@@ -39,17 +39,17 @@ export default async function SubsidyPage({
 
   return (
     <>
-      <section className="bg-navy pb-16 pt-32 text-white md:pt-40">
+      <section className="bg-navy page-top pb-12 text-white sm:pb-16">
         <div className="container-narrow px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-yellow">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-yellow sm:text-sm">
             {t("eyebrow")}
           </p>
-          <h1 className="mt-3 max-w-3xl text-4xl font-bold sm:text-5xl">
+          <h1 className="mt-3 max-w-3xl text-3xl font-bold sm:text-4xl md:text-5xl">
             {t("title")}
           </h1>
-          <p className="mt-4 max-w-2xl text-white/80">{t("intro")}</p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Button asChild size="lg">
+          <p className="mt-4 max-w-2xl text-sm text-white/80 sm:text-base">{t("intro")}</p>
+          <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap">
+            <Button asChild size="lg" className="w-full sm:w-auto">
               <a
                 href={whatsappUrl(tw("consultationMessage"))}
                 target="_blank"
@@ -58,7 +58,7 @@ export default async function SubsidyPage({
                 {tc("checkEligibility")}
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline">
+            <Button asChild size="lg" variant="outline" className="w-full sm:w-auto">
               <Link href="/calculator">{tc("learnMore")}</Link>
             </Button>
           </div>
@@ -67,14 +67,14 @@ export default async function SubsidyPage({
 
       <section className="section-pad">
         <div className="container-narrow grid gap-8 lg:grid-cols-2">
-          <div className="rounded-3xl bg-green p-8 text-white soft-shadow-lg">
-            <h2 className="text-2xl font-bold">{t("zeroTitle")}</h2>
-            <p className="mt-3 text-white/90">{t("zeroBody")}</p>
+          <div className="rounded-2xl bg-green p-6 text-white soft-shadow-lg sm:rounded-3xl sm:p-8">
+            <h2 className="text-xl font-bold sm:text-2xl">{t("zeroTitle")}</h2>
+            <p className="mt-3 text-sm text-white/90 sm:text-base">{t("zeroBody")}</p>
             <p className="mt-4 text-xs text-white/70">{tc("policyFootnote")}</p>
           </div>
-          <div className="rounded-3xl border border-orange/30 bg-orange/10 p-8 soft-shadow">
-            <h2 className="text-2xl font-bold text-navy">{t("deadlineTitle")}</h2>
-            <p className="mt-2 text-4xl font-bold text-orange">{deadline}</p>
+          <div className="rounded-2xl border border-orange/30 bg-orange/10 p-6 soft-shadow sm:rounded-3xl sm:p-8">
+            <h2 className="text-xl font-bold text-navy sm:text-2xl">{t("deadlineTitle")}</h2>
+            <p className="mt-2 text-3xl font-bold text-orange sm:text-4xl">{deadline}</p>
             <p className="mt-3 text-sm text-muted">
               {t("deadlineBody", { date: deadline })}
             </p>

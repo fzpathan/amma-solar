@@ -16,7 +16,7 @@ export function LanguageSwitcher({ light = false }: { light?: boolean }) {
   return (
     <div
       className={cn(
-        "inline-flex items-center rounded-full p-1 text-xs font-semibold",
+        "inline-flex items-center rounded-full p-0.5 text-[11px] font-semibold sm:p-1 sm:text-xs",
         light ? "bg-white/15 text-white" : "bg-surface text-navy"
       )}
       role="group"
@@ -26,7 +26,7 @@ export function LanguageSwitcher({ light = false }: { light?: boolean }) {
         type="button"
         onClick={() => switchTo("mr")}
         className={cn(
-          "rounded-full px-2.5 py-1 transition",
+          "rounded-full px-2 py-1 transition sm:px-2.5",
           locale === "mr"
             ? light
               ? "bg-white text-navy"
@@ -40,7 +40,7 @@ export function LanguageSwitcher({ light = false }: { light?: boolean }) {
         type="button"
         onClick={() => switchTo("en")}
         className={cn(
-          "rounded-full px-2.5 py-1 transition",
+          "rounded-full px-2 py-1 transition sm:px-2.5",
           locale === "en"
             ? light
               ? "bg-white text-navy"

@@ -25,13 +25,13 @@ export default async function CalculatorPage({
   const t = await getTranslations("calculatorPage");
 
   return (
-    <section className="section-pad pt-32 md:pt-40">
+    <section className="section-pad page-top">
       <div className="container-narrow">
-        <div className="mx-auto mb-10 max-w-2xl text-center">
-          <h1 className="text-4xl font-bold text-navy sm:text-5xl">
+        <div className="mx-auto mb-8 max-w-2xl text-center sm:mb-10">
+          <h1 className="text-3xl font-bold text-navy sm:text-4xl md:text-5xl">
             {t("title")}
           </h1>
-          <p className="mt-4 text-muted">{t("subtitle")}</p>
+          <p className="mt-3 text-muted sm:mt-4">{t("subtitle")}</p>
         </div>
         <SolarCalculator />
       </div>

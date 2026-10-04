@@ -11,8 +11,8 @@ export async function Footer() {
 
   return (
     <footer className="border-t border-border bg-navy-deep text-white">
-      <div className="container-narrow section-pad grid gap-10 md:grid-cols-2 lg:grid-cols-4 md:py-16">
-        <div className="space-y-4">
+      <div className="container-narrow section-pad grid gap-8 sm:gap-10 md:grid-cols-2 md:py-16 lg:grid-cols-4">
+        <div className="space-y-3 sm:space-y-4 md:col-span-2 lg:col-span-1">
           <Logo className="[&_span]:text-white [&_span.text-green]:text-yellow [&_span.text-muted]:text-white/60" />
           <p className="text-sm text-white/70">{t("tagline")}</p>
           <p className="text-sm font-medium text-yellow">{t("slogan")}</p>
@@ -20,10 +20,10 @@ export async function Footer() {
         </div>
 
         <div>
-          <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/50">
+          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/50 sm:mb-4 sm:text-sm">
             {t("quickLinks")}
           </h3>
-          <ul className="space-y-2 text-sm">
+          <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm sm:block sm:space-y-2">
             {(
               [
                 ["/", "home"],
@@ -44,7 +44,7 @@ export async function Footer() {
         </div>
 
         <div>
-          <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/50">
+          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/50 sm:mb-4 sm:text-sm">
             {t("contact")}
           </h3>
           <ul className="space-y-4">
@@ -68,7 +68,7 @@ export async function Footer() {
         </div>
 
         <div>
-          <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/50">
+          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/50 sm:mb-4 sm:text-sm">
             {t("addresses")}
           </h3>
           <ul className="space-y-4">
@@ -90,7 +90,7 @@ export async function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="container-narrow flex flex-col gap-3 px-4 py-6 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+        <div className="container-narrow flex flex-col gap-3 px-4 py-5 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:py-6 lg:px-8">
           <p>{t("copyright", { year })}</p>
           <div className="flex gap-4">
             <Link href="/privacy" className="hover:text-white">

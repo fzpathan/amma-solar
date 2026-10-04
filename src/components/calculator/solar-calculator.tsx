@@ -36,7 +36,7 @@ export function SolarCalculator() {
   return (
     <div className="grid gap-8 lg:grid-cols-2">
       <form
-        className="space-y-5 rounded-3xl border border-border bg-white p-6 soft-shadow-lg sm:p-8"
+        className="space-y-5 rounded-2xl border border-border bg-white p-5 soft-shadow-lg sm:rounded-3xl sm:p-8"
         onSubmit={(e) => e.preventDefault()}
       >
         <div>

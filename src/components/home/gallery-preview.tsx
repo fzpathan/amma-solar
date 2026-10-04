@@ -10,18 +10,18 @@ export async function GalleryPreview() {
   return (
     <section className="section-pad bg-surface">
       <div className="container-narrow">
-        <div className="mb-10 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
+        <div className="mb-8 flex flex-col items-stretch justify-between gap-4 sm:mb-10 sm:flex-row sm:items-end">
           <div>
-            <h2 className="text-3xl font-bold text-navy sm:text-4xl">
+            <h2 className="text-2xl font-bold text-navy sm:text-3xl md:text-4xl">
               {t("title")}
             </h2>
             <p className="mt-2 max-w-xl text-muted">{t("subtitle")}</p>
           </div>
-          <Button asChild variant="secondary">
+          <Button asChild variant="secondary" className="w-full sm:w-auto">
             <Link href="/gallery">{t("cta")}</Link>
           </Button>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
           {galleryImages.map((img) => (
             <div
               key={img.src}

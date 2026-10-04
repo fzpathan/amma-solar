@@ -21,9 +21,9 @@ export default async function TermsPage({
   const t = await getTranslations("terms");
 
   return (
-    <section className="section-pad pt-32 md:pt-40">
+    <section className="section-pad page-top">
       <div className="container-narrow max-w-3xl">
-        <h1 className="text-4xl font-bold text-navy">{t("title")}</h1>
+        <h1 className="text-3xl font-bold text-navy sm:text-4xl">{t("title")}</h1>
         <p className="mt-2 text-sm text-muted">{t("updated")}</p>
         <p className="mt-8 leading-relaxed text-navy/80">{t("body")}</p>
       </div>

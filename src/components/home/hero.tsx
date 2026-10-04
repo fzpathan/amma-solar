@@ -16,56 +16,62 @@ export function HeroSection() {
       : siteConfig.subsidyDeadlineDisplay.en;
 
   return (
-    <section className="relative min-h-[100svh] overflow-hidden">
+    <section className="relative min-h-[100svh] overflow-x-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 scale-105 bg-cover bg-center"
         style={{
           backgroundImage: `url(${heroImage})`,
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/75 via-navy/70 to-navy-deep/90" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(253,184,19,0.18),_transparent_50%)]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/85 via-navy/78 to-navy-deep/96" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(253,184,19,0.12),_transparent_55%)]" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy-deep to-transparent" />
 
-      <div className="container-narrow relative flex min-h-[100svh] flex-col justify-end pb-16 pt-32 sm:justify-center sm:pb-24 sm:pt-40 lg:pt-44">
+      <div className="container-narrow relative flex min-h-[100svh] flex-col justify-end px-5 pb-[calc(5.5rem+var(--safe-bottom))] pt-[calc(var(--header-h)+1.5rem+var(--safe-top))] sm:justify-center sm:px-6 sm:pb-24 lg:px-8 lg:pb-28">
         <motion.div
-          initial={{ opacity: 0, y: 28 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="max-w-3xl"
         >
-          <p className="mb-3 text-3xl font-extrabold tracking-tight text-yellow sm:text-4xl md:text-5xl">
+          <p className="mb-1.5 text-xl font-extrabold tracking-tight text-yellow drop-shadow-sm sm:mb-3 sm:text-4xl md:text-5xl">
             {t("brand")}
           </p>
-          <p className="mb-4 inline-flex rounded-full bg-green/20 px-4 py-1.5 text-sm font-semibold text-white ring-1 ring-green/40 sm:text-base">
+
+          <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-white/70 sm:mb-4 sm:text-sm sm:tracking-[0.16em]">
             {t("vendorBadge")}
           </p>
+
           <h1
-            className={`text-3xl font-bold leading-[1.15] text-white sm:text-4xl md:text-5xl ${
+            className={`text-[1.45rem] font-bold leading-[1.25] text-white drop-shadow-sm sm:text-4xl sm:leading-[1.2] md:text-5xl ${
               locale === "mr" ? "font-deva" : ""
             }`}
           >
             {t("headline")}
           </h1>
-          <p className="mt-5 max-w-xl text-lg text-white/90 sm:text-xl">
+
+          <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-white/88 sm:mt-5 sm:text-xl">
             {t("subhead")}
           </p>
-          <p className="mt-4 inline-flex rounded-full bg-yellow/15 px-4 py-2 text-base font-medium text-yellow ring-1 ring-yellow/30">
+
+          <p className="mt-3 text-sm font-medium text-yellow sm:mt-5 sm:text-base">
             {t("deadlineBadge", { date: deadline })}
           </p>
-          <div className="mt-3 flex flex-wrap gap-2">
-            <span className="inline-flex rounded-full bg-white/15 px-4 py-2 text-sm font-semibold text-white ring-1 ring-white/25 sm:text-base">
-              {t("panelWarranty")}
-            </span>
-            <span className="inline-flex rounded-full bg-white/15 px-4 py-2 text-sm font-semibold text-white ring-1 ring-white/25 sm:text-base">
-              {t("inverterWarranty")}
-            </span>
-          </div>
-          <p className="mt-4 max-w-xl text-base text-white/80 sm:text-lg">
+
+          <p className="mt-1.5 max-w-xl text-sm leading-snug text-white/75 sm:mt-2 sm:text-base">
             {t("zeroOffer")}
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Button asChild size="lg">
+          <div className="mt-2.5 flex flex-wrap gap-x-2 gap-y-1 text-[11px] font-semibold text-white/85 sm:mt-4 sm:text-sm">
+            <span>{t("panelWarranty")}</span>
+            <span className="text-white/35" aria-hidden>
+              ·
+            </span>
+            <span>{t("inverterWarranty")}</span>
+          </div>
+
+          <div className="mt-6 flex w-full flex-col gap-2.5 sm:mt-9 sm:w-auto sm:flex-row sm:flex-wrap sm:gap-3">
+            <Button asChild size="lg" className="w-full sm:w-auto">
               <a
                 href={whatsappUrl(tw("consultationMessage"))}
                 target="_blank"
@@ -74,7 +80,12 @@ export function HeroSection() {
                 {t("ctaPrimary")}
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline">
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="w-full sm:w-auto"
+            >
               <a
                 href={whatsappUrl(tw("defaultMessage"))}
                 target="_blank"

@@ -9,18 +9,18 @@ export async function WhyUsSection() {
 
   return (
     <section className="section-pad">
-      <div className="container-narrow grid gap-12 lg:grid-cols-2">
+      <div className="container-narrow grid gap-10 lg:grid-cols-2 lg:gap-12">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-green">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-green sm:text-sm">
             {t("title")}
           </p>
-          <h2 className="mt-3 text-3xl font-bold text-navy sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-bold text-navy sm:text-3xl md:text-4xl">
             {t("headline")}
           </h2>
           <p className="mt-4 text-muted">{t("body")}</p>
           <ul className="mt-6 space-y-3">
             {points.map((p) => (
-              <li key={p} className="flex gap-3 text-sm text-navy">
+              <li key={p} className="flex gap-3 text-sm text-navy sm:text-base">
                 <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green text-white">
                   <Check className="h-3 w-3" />
                 </span>
@@ -40,11 +40,11 @@ export async function WhyUsSection() {
           </div>
         </div>
 
-        <div className="rounded-3xl border border-border bg-white p-6 soft-shadow-lg sm:p-8">
-          <h3 className="text-lg font-semibold text-navy">
+        <div className="rounded-2xl border border-border bg-white p-5 soft-shadow-lg sm:rounded-3xl sm:p-8">
+          <h3 className="text-base font-semibold text-navy sm:text-lg">
             {t("checklistTitle")}
           </h3>
-          <ol className="mt-5 grid gap-3 sm:grid-cols-2">
+          <ol className="mt-5 grid gap-2.5 sm:grid-cols-2 sm:gap-3">
             {checklist.map((c) => (
               <li
                 key={c}

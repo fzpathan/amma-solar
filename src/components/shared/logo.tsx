@@ -7,15 +7,15 @@ type LogoProps = {
 
 export function Logo({ className, variant = "full" }: LogoProps) {
   return (
-    <div className={cn("flex items-center gap-3", className)}>
+    <div className={cn("flex items-center gap-2 sm:gap-2.5", className)}>
       <svg
-        width="52"
-        height="52"
+        width="40"
+        height="40"
         viewBox="0 0 40 40"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden
-        className="h-11 w-11 shrink-0 sm:h-12 sm:w-12 md:h-14 md:w-14"
+        className="h-9 w-9 shrink-0 sm:h-10 sm:w-10 lg:h-11 lg:w-11"
       >
         <rect width="40" height="40" rx="10" fill="#0B3C6D" />
         <path
@@ -32,11 +32,11 @@ export function Logo({ className, variant = "full" }: LogoProps) {
         />
       </svg>
       {variant === "full" && (
-        <div className="leading-none">
-          <span className="block text-2xl font-extrabold tracking-tight text-navy sm:text-3xl lg:text-[2.35rem]">
+        <div className="min-w-0 leading-none">
+          <span className="block truncate text-lg font-extrabold tracking-tight text-navy sm:text-xl lg:text-2xl">
             Amma <span className="text-green">Solar</span>
           </span>
-          <span className="mt-1.5 block text-xs font-semibold uppercase tracking-[0.12em] text-muted sm:text-sm">
+          <span className="mt-1 block text-[10px] font-semibold uppercase tracking-[0.14em] text-muted sm:text-xs">
             Maharashtra
           </span>
         </div>

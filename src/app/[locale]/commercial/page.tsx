@@ -43,15 +43,15 @@ export default async function CommercialPage({
 
   return (
     <>
-      <section className="bg-navy pb-16 pt-32 text-white md:pt-40">
+      <section className="bg-navy page-top pb-12 text-white sm:pb-16">
         <div className="container-narrow px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-yellow">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-yellow sm:text-sm">
             {t("eyebrow")}
           </p>
-          <h1 className="mt-3 max-w-3xl text-4xl font-bold sm:text-5xl">
+          <h1 className="mt-3 max-w-3xl text-3xl font-bold sm:text-4xl md:text-5xl">
             {t("title")}
           </h1>
-          <p className="mt-4 max-w-2xl text-lg text-white/80">{t("intro")}</p>
+          <p className="mt-4 max-w-2xl text-base text-white/80 sm:text-lg">{t("intro")}</p>
           <p className="mt-4 max-w-2xl rounded-2xl bg-white/10 px-4 py-3 text-base text-yellow ring-1 ring-yellow/30">
             {t("vendor")}
           </p>
@@ -60,7 +60,7 @@ export default async function CommercialPage({
 
       <section className="section-pad">
         <div className="container-narrow">
-          <h2 className="text-3xl font-bold text-navy">{t("whoTitle")}</h2>
+          <h2 className="text-2xl font-bold text-navy sm:text-3xl">{t("whoTitle")}</h2>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {whoKeys.map((k, i) => {
               const Icon = whoIcons[i] ?? Factory;
@@ -84,7 +84,7 @@ export default async function CommercialPage({
 
       <section className="section-pad bg-surface pt-0">
         <div className="container-narrow">
-          <h2 className="text-3xl font-bold text-navy">{t("whyTitle")}</h2>
+          <h2 className="text-2xl font-bold text-navy sm:text-3xl">{t("whyTitle")}</h2>
           <ul className="mt-8 grid gap-6 md:grid-cols-2">
             {whyKeys.map((k) => (
               <li

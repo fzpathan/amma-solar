@@ -63,9 +63,9 @@ export function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="space-y-4 rounded-3xl border border-border bg-white p-6 soft-shadow-lg sm:p-8"
+      className="space-y-4 rounded-2xl border border-border bg-white p-5 soft-shadow-lg sm:rounded-3xl sm:p-8"
     >
-      <h2 className="text-xl font-semibold text-navy">{t("formTitle")}</h2>
+      <h2 className="text-lg font-semibold text-navy sm:text-xl">{t("formTitle")}</h2>
 
       <div>
         <Label htmlFor="name">{t("name")}</Label>

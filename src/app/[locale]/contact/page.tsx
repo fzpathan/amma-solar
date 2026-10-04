@@ -28,19 +28,19 @@ export default async function ContactPage({
   const tc = await getTranslations("common");
 
   return (
-    <section className="section-pad pt-32 md:pt-40">
+    <section className="section-pad page-top">
       <div className="container-narrow">
-        <div className="mb-10 max-w-2xl">
-          <h1 className="text-4xl font-bold text-navy sm:text-5xl">
+        <div className="mb-8 max-w-2xl sm:mb-10">
+          <h1 className="text-3xl font-bold text-navy sm:text-4xl md:text-5xl">
             {t("title")}
           </h1>
-          <p className="mt-4 text-lg text-muted">{t("subtitle")}</p>
-          <p className="mt-3 rounded-2xl bg-green/10 px-4 py-3 text-base font-medium text-navy">
+          <p className="mt-3 text-base text-muted sm:mt-4 sm:text-lg">{t("subtitle")}</p>
+          <p className="mt-3 rounded-2xl bg-green/10 px-4 py-3 text-sm font-medium text-navy sm:text-base">
             {t("vendorNote")}
           </p>
         </div>
 
-        <div className="grid gap-10 lg:grid-cols-2">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-10">
           <div className="space-y-6">
             <div className="rounded-3xl bg-surface p-6 soft-shadow">
               <p className="text-sm uppercase tracking-wider text-muted">
